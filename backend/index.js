@@ -1,12 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const { allModels } = require("./api/models/models");
 const { projectRouter } = require("./api/routes/projects.route");
 const cors = require("cors");
-const {
-  fillingTableProjects,
-} = require("./api/createDataPg/fillingTableProjects");
-const { fetchAPIurl } = require("./api/utils/fetchAPI.img");
 const { clientsRouter } = require("./api/routes/clients.route");
 const { recruitsRouter } = require("./api/routes/recruits.route");
 
