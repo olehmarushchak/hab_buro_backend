@@ -43,6 +43,7 @@
     "mammoth": "^1.8.0",
     "nodemailer": "^6.9.14",
     "nodemon": "^3.1.4",
+    "package": "^1.0.1",
     "pg": "^8.12.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -51,16 +52,6 @@
     "sequelize": "^6.37.3",
     "ws": "^8.18.0",
     "xml2js": "^0.6.2"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "some-package"
-      ],
-      "allowedVersions": {
-        "some-package": ">=1.0.0"
-      }
-    }
   },
   "packageManager": "yarn@4.3.1+sha224.934d21773e22af4b69a7032a2d3b4cb38c1f7c019624777cc9916b23"
 }
