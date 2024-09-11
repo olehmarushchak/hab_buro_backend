@@ -1,0 +1,11 @@
+# IDE
+.idea
+.vscode
+.env
+backend/public/
+
+# Node
+node_modules
+
+# MacOS
+.DS_Store
