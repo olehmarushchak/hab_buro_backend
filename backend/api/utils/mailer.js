@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const mailCompany = "hab.buro25@gmail.com";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -31,7 +32,7 @@ function sendInfo(newClients) {
 
 function sendInfoForCompany(newClients) {
   const { id, name, phone, email, comments } = newClients;
-
+  
   const html = `
     <h1>${name} зробив заявку!</h1>
     <p>Номер телефону: ${phone}</p>
@@ -41,7 +42,7 @@ function sendInfoForCompany(newClients) {
     <span>Не забарюйте!</span>
   `;
 
-  return send(email, "Нова заявка!!!", html);
+  return send(mailCompany, "Нова заявка!!!", html);
 }
 
 function sendInfoAboutRecruit(newRecruit) {
@@ -56,7 +57,7 @@ function sendInfoAboutRecruit(newRecruit) {
     <span>Не забарюйте!</span>
   `;
 
-  return send(email, `Нове Резюме від ${name}!!!`, html);
+  return send(mailCompany, `Нове Резюме від ${name}!!!`, html);
 }
 
 const mailer = {
