@@ -4,6 +4,7 @@ const { projectRouter } = require("./api/routes/projects.route");
 const cors = require("cors");
 const { clientsRouter } = require("./api/routes/clients.route");
 const { recruitsRouter } = require("./api/routes/recruits.route");
+const { authRouter } = require("./api/routes/auth.route");
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use("/projects", projectRouter);
 app.use("/clients", clientsRouter);
 app.use("/recruits", recruitsRouter);
+app.use("/login", authRouter);
 
 // Init Table with .sync and fill
 // allModels
