@@ -47,6 +47,7 @@ function sendInfoForCompany(newClients) {
 
 function sendInfoAboutRecruit(newRecruit) {
   const { id, name, phone, email, comments, cvlink } = newRecruit;
+  
   const html = `
     <h1>${name}, надіслав резюме на огляд!</h1>
     <p>Номер телефону: ${phone}</p>
