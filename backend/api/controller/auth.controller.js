@@ -5,7 +5,9 @@ const login = async (req, res) => {
     return res.sendStatus(421);
   }
 
-  if (login === process.env.LOGIN && password === process.env.PASSWORD) {
+  const { LOGIN, PASSWORD } = process.env;
+
+  if (login === LOGIN && password === PASSWORD) {
     res.json({ auth: true });
   }
 
