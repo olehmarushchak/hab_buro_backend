@@ -4,8 +4,8 @@ const mailCompany = "hab.buro25@gmail.com";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "westernpc22@gmail.com",
-    pass: "igaw gkhc cogm znhn",
+    user: "work.hab.buro@gmail.com",
+    passz: "ufbj utgu jutn oroj", //"igaw gkhc cogm znhn"
   },
 });
 
