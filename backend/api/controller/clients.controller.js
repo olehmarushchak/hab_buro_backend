@@ -9,17 +9,12 @@ const createClients = async (req, res) => {
     return res.sendStatus(421);
   }
 
-  const newClients = await clientsServices.create(name, email, phone, comments).then(() => {
-    mailer.sendInfo(newClients).catch((error) => {return res.send(error)});
-    //mailer.sendInfoForCompany(newClients);
-  }).catch((error) => {
-    res.sendStatus(501);
+  const newClients = await clientsServices.create(name, email, phone, comments);
 
-    return res.send(error)
-  });
+  mailer.sendInfo(newClients).catch((error) => console.log(error));
+  const latter = mailer.sendInfoForCompany(newClients);
 
-
-  return res.send(newClients);
+  return res.send(latter);
 };
 
 
