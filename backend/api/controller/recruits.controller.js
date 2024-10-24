@@ -17,9 +17,9 @@ const createNewRecruit = async (req, res) => {
     cvlink
   );
 
-  mailer.sendInfoAboutRecruit(newRecruit);
+  await mailer.sendInfoAboutRecruit(newRecruit);
 
-  res.send(newRecruit);
+  return res.send(newRecruit);
 };
 
 const recruitsController = {
