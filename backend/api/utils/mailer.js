@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const mailCompany = "westernpc22@gmail.com";
+const mailCompany = "hab.buro25@gmail.com";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
