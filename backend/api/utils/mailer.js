@@ -25,9 +25,12 @@ function sendInfo(newClients) {
     <h1>${name}, Заявку принято!</h1>
     <p>Незабаром з вами звяжеться наш менеджер, очікуйте дзвінка</p>
     <span>Дякую що звернулись до нас!</span>
+    <br/>
+    <span>Наша інстаграм сторінка!</span>
+    <a>https://www.instagram.com/hab_buro/</a>
   `;
 
-  return send(email, "INFO", html);
+  return send(email, "HAB BURO INFO", html);
 }
 
 function sendInfoForCompany(newClients) {
