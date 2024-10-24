@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const mailCompany = "hab.buro25@gmail.com";
+const mailCompany = "jijira7912@aqqor.com";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -27,7 +27,8 @@ function sendInfo(newClients) {
     <span>Дякую що звернулись до нас!</span>
     <br/>
     <span>Наша інстаграм сторінка!</span>
-    <a>https://www.instagram.com/hab_buro/</a>
+    <br/>
+    <a href="https://www.instagram.com/hab_buro/">Instagram</a>
   `;
 
   return send(email, "HAB BURO INFO", html);
