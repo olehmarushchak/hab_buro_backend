@@ -24,7 +24,6 @@ const Clients = sequelize.define(
     comments: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "without comments",
     },
   },
   {
